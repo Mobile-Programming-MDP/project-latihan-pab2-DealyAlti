@@ -1,0 +1,74 @@
+[debug] [2025-03-28T04:55:26.736Z] ----------------------------------------------------------------------
+[debug] [2025-03-28T04:55:26.740Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-03-28T04:55:26.741Z] CLI Version:   13.35.1
+[debug] [2025-03-28T04:55:26.741Z] Platform:      win32
+[debug] [2025-03-28T04:55:26.741Z] Node Version:  v20.17.0
+[debug] [2025-03-28T04:55:26.741Z] Time:          Fri Mar 28 2025 11:55:26 GMT+0700 (Indochina Time)
+[debug] [2025-03-28T04:55:26.741Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-28T04:55:26.746Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-03-28T04:55:26.828Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-28T04:55:26.828Z] > authorizing via signed-in user (dealyalti_2226240037@mhs.mdp.ac.id)
+[debug] [2025-03-28T04:55:27.429Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-03-28T04:55:27.430Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-03-28T04:55:35.532Z] Checked if tokens are valid: false, expires at: 1742553754311
+[debug] [2025-03-28T04:55:35.532Z] Checked if tokens are valid: false, expires at: 1742553754311
+[debug] [2025-03-28T04:55:35.532Z] > refreshing access token with scopes: []
+[debug] [2025-03-28T04:55:35.535Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-28T04:55:35.536Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-28T04:55:35.665Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-28T04:55:35.665Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-28T04:55:35.681Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-28T04:55:35.681Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"fasum-app","name":"fasum"}
+[debug] [2025-03-28T04:55:36.806Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-03-28T04:55:36.806Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-03-28T04:55:36.881Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID fasum-app. Please try again with a unique project ID.
+[debug] [2025-03-28T04:56:20.430Z] ----------------------------------------------------------------------
+[debug] [2025-03-28T04:56:20.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-03-28T04:56:20.436Z] CLI Version:   13.35.1
+[debug] [2025-03-28T04:56:20.436Z] Platform:      win32
+[debug] [2025-03-28T04:56:20.437Z] Node Version:  v20.17.0
+[debug] [2025-03-28T04:56:20.437Z] Time:          Fri Mar 28 2025 11:56:20 GMT+0700 (Indochina Time)
+[debug] [2025-03-28T04:56:20.437Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-28T04:56:20.450Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-28T04:56:20.451Z] > authorizing via signed-in user (dealyalti_2226240037@mhs.mdp.ac.id)
+[debug] [2025-03-28T04:56:56.523Z] Checked if tokens are valid: true, expires at: 1743141334665
+[debug] [2025-03-28T04:56:56.524Z] Checked if tokens are valid: true, expires at: 1743141334665
+[debug] [2025-03-28T04:56:56.526Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-28T04:56:56.527Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"fasum-apps","name":"fasum-apps"}
+[debug] [2025-03-28T04:56:57.737Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-03-28T04:56:57.737Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-03-28T04:56:57.804Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID fasum-apps. Please try again with a unique project ID.
+[debug] [2025-03-28T04:58:05.441Z] ----------------------------------------------------------------------
+[debug] [2025-03-28T04:58:05.445Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create
+[debug] [2025-03-28T04:58:05.446Z] CLI Version:   13.35.1
+[debug] [2025-03-28T04:58:05.446Z] Platform:      win32
+[debug] [2025-03-28T04:58:05.447Z] Node Version:  v20.17.0
+[debug] [2025-03-28T04:58:05.447Z] Time:          Fri Mar 28 2025 11:58:05 GMT+0700 (Indochina Time)
+[debug] [2025-03-28T04:58:05.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-28T04:58:05.457Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-28T04:58:05.458Z] > authorizing via signed-in user (dealyalti_2226240037@mhs.mdp.ac.id)
+[debug] [2025-03-28T04:58:26.873Z] Checked if tokens are valid: true, expires at: 1743141334665
+[debug] [2025-03-28T04:58:26.873Z] Checked if tokens are valid: true, expires at: 1743141334665
+[debug] [2025-03-28T04:58:26.875Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-03-28T04:58:26.876Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"fasum-apps","name":"fasum-apps"}
+[debug] [2025-03-28T04:58:28.134Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-03-28T04:58:28.135Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-03-28T04:58:28.209Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID fasum-apps. Please try again with a unique project ID.
