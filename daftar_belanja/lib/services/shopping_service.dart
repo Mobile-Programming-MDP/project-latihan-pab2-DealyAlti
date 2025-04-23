@@ -1,9 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
-
 class ShoppingService {
     final DatabaseReference _database = 
         FirebaseDatabase.instance.ref().child('shopping_list');
-    
     Stream<Map<String, String>>  getShoppingList(){
         return _database.onValue.map((event){
             final Map<String, String> items={};
@@ -20,7 +18,6 @@ class ShoppingService {
             return items;
         });
     }
-
     void addShoppingItem(String itemName){
         _database.push().set({'name': itemName});
     }
