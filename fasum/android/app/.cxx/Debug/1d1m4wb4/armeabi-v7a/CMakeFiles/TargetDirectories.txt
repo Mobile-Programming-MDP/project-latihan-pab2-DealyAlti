@@ -1,0 +1,2 @@
+D:/Campus/Semester 6/PAB II/project-latihan-pab2-DealyAlti/fasum/android/app/.cxx/Debug/1d1m4wb4/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Campus/Semester 6/PAB II/project-latihan-pab2-DealyAlti/fasum/android/app/.cxx/Debug/1d1m4wb4/armeabi-v7a/CMakeFiles/rebuild_cache.dir
