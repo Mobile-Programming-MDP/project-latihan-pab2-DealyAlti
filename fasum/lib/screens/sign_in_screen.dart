@@ -9,10 +9,13 @@ class SignInScreen extends StatefulWidget {
   @override
   SignInScreenState createState() => SignInScreenState();
 }
+
 class SignInScreenState extends State<SignInScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+
   String _errorMessage = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
